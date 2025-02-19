@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sitem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Giriş Ekranı -->
+    <div id="intro-screen">
+        <div class="snowfall"></div>
+        <h1>BLODWHITE</h1>
+        <div id="name-input">
+            <label for="username">İsminizi Girin:</label>
+            <input type="text" id="username" placeholder="İsminizi Girin...">
+            <button id="start-btn">Başla</button>
+        </div>
+    </div>
+
+    <!-- Ana İçerik -->
+    <div id="main-content" style="display: none;">
+        <div id="sidebar">
+            <ul>
+                <li onclick="showChannel('main-menu')">Ana Menü</li>
+                <li onclick="showChannel('chat-channel')">Chat Kanalı</li>
+                <li onclick="showChannel('anonymous-channel')">Anonim Kanal</li>
+            </ul>
+        </div>
+        <div id="channel-content">
+            <!-- Kanalların içeriği burada olacak -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
